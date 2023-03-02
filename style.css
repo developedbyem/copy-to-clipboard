@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+::selection {
+  background-color: #03a9f4;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #03a9f4;
+  font-size: 1rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 2rem 1.25rem;
+  gap: 1rem;
+}
+.container :where(textarea, button) {
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
+}
+.container textarea {
+  border: 1px solid #999;
+}
+.container button {
+  background-color: #b3e5fc;
+  transition: all 0.75s ease-in-out;
+}
